@@ -12,8 +12,9 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import codePush from '@revopush/react-native-code-push';
 
-function App() {
+let App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   console.log('this is log new');
   return (
@@ -23,12 +24,12 @@ function App() {
       <Text>This is a new app </Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
 });
-
+App = codePush(App);
 export default App;

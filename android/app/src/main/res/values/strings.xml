@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">mycodemagic</string>
+    <string moduleConfig="true" name="CodePushServerUrl">https://api.revopush.org</string>
+    <string moduleConfig="true" key="CodePushDeploymentKey">LwgVDe_g1FlGjLHEc1ZjbOAPFZV_4yNwaI0ufl</string>
 </resources>
+
