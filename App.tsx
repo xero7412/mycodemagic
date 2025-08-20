@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import codePush from '@revopush/react-native-code-push';
 
-let App = () => {
+const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   console.log('this is log new');
   return (
@@ -22,6 +22,7 @@ let App = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Text>Hello react native world</Text>
       <Text>This is a new app </Text>
+      <Text>And this codepush poc test 2</Text>
     </View>
   );
 };
@@ -31,5 +32,4 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-App = codePush(App);
-export default App;
+export default codePush(App);
